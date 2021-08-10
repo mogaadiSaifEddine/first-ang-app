@@ -1,6 +1,5 @@
 # Editor configuration, see https://editorconfig.org
 root = true
-**/node_modules
 [*]
 charset = utf-8
 indent_style = space
