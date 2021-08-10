@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title : string = 'first-angular-app';
+  tggole(){
+    alert ('app component button clicked')
+    console.log('app component button clicked');
+  }
 }

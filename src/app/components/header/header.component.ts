@@ -11,5 +11,9 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  toggle(){
+    alert('header button clicked')
+    console.log('header buttton');
+  }
 
 }
