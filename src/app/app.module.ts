@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FontAwesomeModule  } from '@fortawesome/angular-fontawesome';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ButtonComponent } from './components/button/button.component';
 import { TaskComponent } from './components/task/task.component';
 import { TaskItemComponent } from './components/task-item/task-item.component';
+import {HttpClientJsonpModule, HttpClientModule} from'@angular/common/http'
+
 
 @NgModule({
   declarations: [
@@ -13,11 +16,13 @@ import { TaskItemComponent } from './components/task-item/task-item.component';
     HeaderComponent,
     ButtonComponent,
     TaskComponent,
-    TaskItemComponent
+    TaskItemComponent,
+    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,    FontAwesomeModule ,HttpClientModule
   ],
+  exports :[TaskItemComponent], 
   providers: [],
   bootstrap: [AppComponent]
 })

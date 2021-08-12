@@ -107,7 +107,7 @@
   }
 
   .card-container .card:not(:last-child) {
-    margin-right: 0;
+    margin-right: 0;  
   }
 
   .card.card-small {
@@ -177,7 +177,7 @@
     border-radius: 5px;
   }
   .task{
-    background: #f4f4f4;
+    background: #7e7e7e;
     margin: 5px;
     padding: 10px , 5px;
     cursor: pointer;
