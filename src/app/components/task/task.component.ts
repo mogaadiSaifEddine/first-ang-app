@@ -10,15 +10,15 @@ import { TaskService } from '../../services/task.service';
 })
 export class TaskComponent implements OnInit {
   tasks : Task[]=[] 
-  @Output() addTask: EventEmitter<Task>= new EventEmitter()
   constructor(private taskService : TaskService) { }
 
   ngOnInit(): void {
     this.taskService.getTasks().subscribe((tasks)=>this.tasks =tasks)
     
   }
-  adTask(){
-
+  adTask(task: Task){
+   this.taskService.addTask(task).subscribe((task)=>this.tasks.push(task))
+    console.log(task);
   }
 
   reminderset(task: Task){

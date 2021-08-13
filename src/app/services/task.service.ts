@@ -36,5 +36,9 @@ updatetask(task:Task): Observable<Task>{
   return this.httpclient.put<Task>(url , task , httpOption)
 
 }
+addTask(task:Task) :Observable<Task>{
+  
+  return this.httpclient.post<Task>(this.Uri ,task,httpOption)
+}
 
 }
