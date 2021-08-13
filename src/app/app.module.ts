@@ -30,7 +30,7 @@ const taskRoutes : Routes =[
     TaskItemComponent,
     AddTaskComponent,
     FooterComponent,
-    AboutComponent
+    AboutComponent  
     
   ],
   imports: [
